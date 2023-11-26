@@ -1,0 +1,33 @@
+@mixin default {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: $font;
+    border: none;
+    background: transparent;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+@mixin flex ($fd, $ai, $jc, $gp) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: $fd;
+    align-items: $ai;
+    justify-content: $jc;
+    gap: $gp;
+}
+
+@mixin text ($fs, $fw, $ls, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    letter-spacing: $ls;
+    line-height: $lh;
+}
+
+@mixin button {
+    border: 2px solid;
+    padding: 8px 40px;
+    font-size: 14px;
+    border-radius: 40px;
+}
